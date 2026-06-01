@@ -1,18 +1,18 @@
-function customRender(reactElement,container){
+function customRender(reactElement,container){  //this function injects reactelemnt into main container element
     // const domElemnt=document.createElement(reactElement.type)
     // domElement.innerHTML=reactElement.children
-    // domElement.setAttribute('href',reactElement.props.hreaf)
+    // domElement.setAttribute('href',reactElement.props.href)
     // domElement.setAttribute('target',reactElement.props.target)
 
     // container.appendChild(domElement)
 
-    const domElemnt=document.createElement(reactElement.type)
+    const domElement=document.createElement(reactElement.type)
     domElement.innerHTML=reactElement.children
     for(const prop in reactElement.props){
         if(prop=='children') continue;
-        domElemnt.setAttribute(prop,reactElement.props[props])
+        domElement.setAttribute(prop,reactElement.props[prop])
     }
-    container.appendChild(domElent)
+    container.appendChild(domElement)
 }
 
 const reactElement={
@@ -23,8 +23,7 @@ const reactElement={
     },
     children: 'Click me to visit google'
 }
-
-
 const mainContainer = document.querySelector('#root')
+customRender(reactElement, mainContainer)
 
-customFRender(reactElement, mainContainer)
+//in similar way actual react works..........a method keeps creating element and its DOM tree and keeps injecting it to the main container
