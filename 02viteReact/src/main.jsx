@@ -6,11 +6,11 @@ import App from './App.jsx'
 
 const anothervariable="shiv"
 const reactElement=React.createElement(  //react gives a method to create elements but it requires predefined parameters in predefined format
-  'a',
-  {href:'https://google.com',target: '_blank'},
-  'Click me to visit google',
+  'a',                                               //type
+  {href:'https://google.com',target: '_blank'},      //Key
+  'Click me to visit google',                        //ref
   <br/>,
-  anothervariable    ///here we insert evaluated variables
+  anothervariable    ///here we insert evaluated variables   ///props
 )
 
 
