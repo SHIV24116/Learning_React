@@ -1,7 +1,7 @@
-# Password Generator
+# 06currencyConverter
 
-This is the 5th project of React series.
-Here, we learnt the usage of different builtin hooks in react such as useState(),useRef(),useCallback(),useEffect().
+This is the 6th project of a react.
+Here, we applied and learnt the creation of custom Hooks and reuse of components in react.
 
 Currently, two official plugins are available:
 

@@ -1,6 +1,6 @@
-# React + Vite
+# Tailwindprops
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the 3rd basic project of this React series.Here, we created CSS card component and used it
 
 Currently, two official plugins are available:
 

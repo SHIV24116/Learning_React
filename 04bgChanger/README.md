@@ -1,6 +1,6 @@
-# React + Vite
+# Background Changer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the 4th project of this React series.Here we learnt the integration of Tailwind CSS in React apps.
 
 Currently, two official plugins are available:
 
