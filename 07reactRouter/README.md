@@ -1,8 +1,7 @@
-# 06currencyConverter
+# React Router
 
-This is the 6th project of a react.
-Here, we applied and learnt the creation of custom Hooks and reuse of components in react.
-Learnt fetching of an API.
+This is the 7th project of this React series.
+Here, we have learned the use of React-Router library which is an external library extension.
 
 Currently, two official plugins are available:
 
