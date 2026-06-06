@@ -7,5 +7,5 @@ export default function User(){
     )
 }
 
-// url/user/userid(100,etc)...........karenge to user id display hogi
-//is block ke through jo bhi url ,e ayega hame uska access mil jayega
+// url/user/userid(100,etc)...........karenge to userid display hogi
+//is block ke through jo bhi url me ayega hame uska access mil jayega

@@ -36,7 +36,9 @@ export default function Contact() {
                                         stroke-width="1.5"
                                         d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
                                     />
-                                </svg>
+                                </svg> 
+                                {/* svg part is for the location icon */}
+                                
                                 <div className="ml-4 text-md tracking-wide font-semibold w-40">
                                     Acme Inc, Street, State, Postal Code
                                 </div>
