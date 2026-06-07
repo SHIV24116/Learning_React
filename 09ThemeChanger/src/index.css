@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* for making that dark light theme work we need this 2nd line */
