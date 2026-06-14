@@ -19,7 +19,7 @@ export class AuthService{
             const userAccount=await this.account.create(ID.unique(),email,password,name); //can refer these methods from appwrite documentations(authentication section)
             if(userAccount){
                 //call another method
-                return this.login({eemail,password});
+                return this.login({email,password});
             }else {
                 return userAccount;
             }
@@ -67,6 +67,10 @@ export class AuthService{
     }
 }  ///code same standard wala hi hai....just usko classes and object ke form me convert kar diya hai
 
+
+const authService = new AuthService();
+
+export default authService
 
 
 

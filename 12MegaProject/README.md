@@ -1,6 +1,12 @@
 # Mega Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+we will be using following technologies in this app:
+1.Appwrite for complete backend services just like firebase but this one is open source
+2.TinyMCE text editor
+3.HTML-React Parser
+4.React Hook Form
+5.React,React-Router
+6.Redux-toolkit
 
 Currently, two official plugins are available:
 
