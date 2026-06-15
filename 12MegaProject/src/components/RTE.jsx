@@ -38,7 +38,8 @@ export default function RTE({name, control, label, defaultValue =""}) {
     name={name || "content"}
     control={control}
     render={({field: {onChange}}) => (
-        <Editor                    /////jo abhi dekha
+        <Editor 
+        apiKey={import.meta.env.VITE_TINYMCE_URL}                  /////jo abhi dekha
         initialValue={defaultValue}
         init={{
             initialValue: defaultValue,

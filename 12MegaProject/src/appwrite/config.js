@@ -1,5 +1,5 @@
 import conf from "../conf/conf";
-import { Client,ID,Databases,Storage,Query } from "appwrite";
+import { Client,ID,Databases,Storage,Query,Permission,Role} from "appwrite";
 
 export class Service{
     client=new Client();
@@ -27,7 +27,7 @@ export class Service{
                     content,
                     featuredImage,
                     status,
-                    userId,
+                    userid: userId,
                 }
             )
         }catch(error){
@@ -45,7 +45,7 @@ export class Service{
                     content,
                     featuredImage,
                     status,
-                    userId,
+                    userid:userId,
                 }
             )
         }catch(error){
@@ -66,7 +66,7 @@ export class Service{
     }
     async getPost(slug) { //only document id needed
         try{
-            await this.databases.getDocument(
+            return await this.databases.getDocument(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 slug,   //document id
@@ -79,7 +79,7 @@ export class Service{
     }
     async getPosts(queries=[Query.equal("status","active",)]) { //to get all posts acc. to some property we define query
         try{
-            await this.databases.getDocument(
+            return await this.databases.listDocuments(
                 conf.appwriteDatabaseId,
                 conf.appwriteCollectionId,
                 queries,
@@ -100,6 +100,9 @@ export class Service{
             conf.appwriteBucketId,
             ID.unique(),
             file,
+            [
+             Permission.read(Role.any())
+            ]
            )
            return true;
         }catch(error){

@@ -21,7 +21,7 @@ function Signup() {
             const account = await authService.createAccount(data)
             if (account) {
                 const userData = await authService.getCurrentUser()
-                if(userData) dispatch(authLogin(userData));
+                if(userData) dispatch(authLogin({userData}));
                 navigate("/")
             }
         } catch (error) {
@@ -43,10 +43,10 @@ function Signup() {
         <p className="mt-2 text-center text-base text-black/60">
                     Already have an account?;
                     <Link
-                        to="/signup"
+                        to="/login"
                         className="font-medium text-primary transition-all duration-200 hover:underline"
                     >
-                        Sign Up
+                        Login
                     </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
@@ -57,7 +57,7 @@ function Signup() {
                 <Input
                 label="Name: "
                 placeholder="Enter your full name"
-                type="email"
+                type="text"
                 {...register("name", {   //very important to take register like this
                     required: true,
                 })}
